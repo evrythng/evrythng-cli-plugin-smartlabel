@@ -1,0 +1,202 @@
+{
+  "type": "object",
+  "required": [
+    "customFields",
+    "identifiers",
+    "brand",
+    "name",
+    "photos"
+  ],
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "brand": {
+      "type": "string"
+    },
+    "identifiers": {
+      "required": [
+        "gs1:01"
+      ],
+      "properties": {
+        "gs1:01": {
+          "type": "string"
+        }
+      }
+    },
+    "photos": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "customFields": {
+      "description": "Describes an EVRYTHNG product's customFields that are suitable for SmartLabel. These are prefixed with the 'sl' namespace.",
+      "required": [
+        "smartLabel:added_sugars_dv",
+        "smartLabel:added_sugars_g",
+        "smartLabel:allergens",
+        "smartLabel:calories",
+        "smartLabel:certifications",
+        "smartLabel:cholesterol_dv",
+        "smartLabel:cholesterol_mg",
+        "smartLabel:claims",
+        "smartLabel:company_address",
+        "smartLabel:company_email",
+        "smartLabel:company_phone",
+        "smartLabel:company_privacy",
+        "smartLabel:dietary_fiber_dv",
+        "smartLabel:dietary_fiber_g",
+        "smartLabel:health",
+        "smartLabel:ingredients",
+        "smartLabel:protein_g",
+        "smartLabel:sat_fat_dv",
+        "smartLabel:sat_fat_g",
+        "smartLabel:serving_size",
+        "smartLabel:servings_per_container",
+        "smartLabel:sodium_dv",
+        "smartLabel:sodium_mg",
+        "smartLabel:sugars_g",
+        "smartLabel:total_carbohydrates_dv",
+        "smartLabel:total_carbohydrates_g",
+        "smartLabel:total_fat_dv",
+        "smartLabel:total_fat_g",
+        "smartLabel:trans_fat_g",
+        "smartLabel:website_name",
+        "smartLabel:website_url",
+        "smartLabel:weight_oz"
+      ],
+      "properties": {
+        "smartLabel:added_sugars_dv": {
+          "type": "string",
+          "description": "Added sugar % daily value"
+        },
+        "smartLabel:added_sugars_g": {
+          "type": "string",
+          "description": "Added sugar per serving in g"
+        },
+        "smartLabel:allergens": {
+          "type": "string",
+          "description": "Up to 5 allergens (allergen1,allergen2,allergen3)"
+        },
+        "smartLabel:calories": {
+          "type": "string",
+          "description": "Calories per serving in g"
+        },
+        "smartLabel:certifications": {
+          "type": "string",
+          "description": "Up to three certifications (title1|description1,title2|description2)"
+        },
+        "smartLabel:cholesterol_dv": {
+          "type": "string",
+          "description": "Cholesterol % daily value"
+        },
+        "smartLabel:cholesterol_mg": {
+          "type": "string",
+          "description": "Cholesterol per serving in mg"
+        },
+        "smartLabel:claims": {
+          "type": "string",
+          "description": "Up to three claims (title1|description1,title2|description2)"
+        },
+        "smartLabel:company_address": {
+          "type": "string",
+          "description": "Company address"
+        },
+        "smartLabel:company_email": {
+          "type": "string",
+          "description": "Company email"
+        },
+        "smartLabel:company_phone": {
+          "type": "string",
+          "description": "Brand contact phone number"
+        },
+        "smartLabel:company_privacy": {
+          "type": "string",
+          "description": "Link to the company privacy policy page"
+        },
+        "smartLabel:dietary_fiber_dv": {
+          "type": "string",
+          "description": "Dietary fiber % daily value"
+        },
+        "smartLabel:dietary_fiber_g": {
+          "type": "string",
+          "description": "Dietary fiber per serving in g"
+        },
+        "smartLabel:health": {
+          "type": "string",
+          "description": "Up to three health and safety items (title1|description1,title2|description2)"
+        },
+        "smartLabel:ingredients": {
+          "type": "string",
+          "description": "Up to 16 ingredients (ingredient1,ingredient2,ingredient3)"
+        },
+        "smartLabel:protein_g": {
+          "type": "string",
+          "description": "Protein per serving in g"
+        },
+        "smartLabel:sat_fat_dv": {
+          "type": "string",
+          "description": "Saturated fat % daily value"
+        },
+        "smartLabel:sat_fat_g": {
+          "type": "string",
+          "description": "Saturated fat per serving in g"
+        },
+        "smartLabel:serving_size": {
+          "type": "string",
+          "description": "Serving size (2 biscuits)"
+        },
+        "smartLabel:servings_per_container": {
+          "type": "string",
+          "description": "Total servings per container"
+        },
+        "smartLabel:sodium_dv": {
+          "type": "string",
+          "description": "Sodium % daily value"
+        },
+        "smartLabel:sodium_mg": {
+          "type": "string",
+          "description": "Sodium per serving in mg"
+        },
+        "smartLabel:sugars_g": {
+          "type": "string",
+          "description": "Sugar per serving in g"
+        },
+        "smartLabel:total_carbohydrates_dv": {
+          "type": "string",
+          "description": "Total carbohydrates % daily value"
+        },
+        "smartLabel:total_carbohydrates_g": {
+          "type": "string",
+          "description": "Total carbohydrates per serving in g"
+        },
+        "smartLabel:total_fat_dv": {
+          "type": "string",
+          "description": "Total fat % daily value in g"
+        },
+        "smartLabel:total_fat_g": {
+          "type": "string",
+          "description": "Total fat per serving in g"
+        },
+        "smartLabel:trans_fat_g": {
+          "type": "string",
+          "description": "Trans fat per serving in g"
+        },
+        "smartLabel:website_name": {
+          "type": "string",
+          "description": "Website name"
+        },
+        "smartLabel:website_url": {
+          "type": "string",
+          "description": "Website URL"
+        },
+        "smartLabel:weight_oz": {
+          "type": "string",
+          "description": "Weight in ounces"
+        }
+      }
+    }
+  }
+}

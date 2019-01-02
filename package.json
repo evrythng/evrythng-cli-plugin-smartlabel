@@ -1,0 +1,24 @@
+{
+  "name": "evrythng-cli-plugin-smartlabel",
+  "version": "1.0.0",
+  "description": "Plugin for the EVRYTHNG CLI that creates smartlabel.evrythng.io compatible products.",
+  "main": "index.js",
+  "author": "EVRYTHNG",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/evrythng/evrythng-cli-plugin-smartlabel"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha tests/index.js"
+  },
+  "dependencies": {
+    "jsonschema": "^1.2.4",
+    "readline": "^1.3.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "sinon": "^7.2.2"
+  }
+}
