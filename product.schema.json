@@ -48,8 +48,14 @@
         "smartLabel:company_privacy",
         "smartLabel:dietary_fiber_dv",
         "smartLabel:dietary_fiber_g",
-        "smartLabel:health",
+        "smartLabel:gmo_disclosure",
+        "smartLabel:health_and_safety",
         "smartLabel:ingredients",
+        "smartLabel:product_descriptor",
+        "smartLabel:product_grade",
+        "smartLabel:product_instructions",
+        "smartLabel:product_juice_declaration",
+        "smartLabel:product_meat_legend",
         "smartLabel:protein_g",
         "smartLabel:sat_fat_dv",
         "smartLabel:sat_fat_g",
@@ -58,6 +64,7 @@
         "smartLabel:sodium_dv",
         "smartLabel:sodium_mg",
         "smartLabel:sugars_g",
+        "smartLabel:sustainability",
         "smartLabel:total_carbohydrates_dv",
         "smartLabel:total_carbohydrates_g",
         "smartLabel:total_fat_dv",
@@ -124,13 +131,37 @@
           "type": "string",
           "description": "Dietary fiber per serving in g"
         },
-        "smartLabel:health": {
+        "smartLabel:gmo_disclosure": {
+          "type": "string",
+          "description": "Up to three GMO disclosure items (title1|description1,title2|description2)"
+        },
+        "smartLabel:health_and_safety": {
           "type": "string",
           "description": "Up to three health and safety items (title1|description1,title2|description2)"
         },
         "smartLabel:ingredients": {
           "type": "string",
           "description": "Up to 16 ingredients (ingredient1,ingredient2,ingredient3)"
+        },
+        "smartLabel:product_descriptor": {
+          "type": "string",
+          "description": "A short product descriptor"
+        },
+        "smartLabel:product_grade": {
+          "type": "string",
+          "description": "Product grade, if applicable"
+        },
+        "smartLabel:product_instructions": {
+          "type": "string",
+          "description": "Up to three product instruction items (title1|description1,title2|description2)"
+        },
+        "smartLabel:product_juice_declaration": {
+          "type": "string",
+          "description": "Product juice declaration, if applicable"
+        },
+        "smartLabel:product_meat_legend": {
+          "type": "string",
+          "description": "Product meat legend, if applicable"
         },
         "smartLabel:protein_g": {
           "type": "string",
@@ -163,6 +194,10 @@
         "smartLabel:sugars_g": {
           "type": "string",
           "description": "Sugar per serving in g"
+        },
+        "smartLabel:sustainability": {
+          "type": "string",
+          "description": "Up to three sustainability items (title1|description1,title2|description2)"
         },
         "smartLabel:total_carbohydrates_dv": {
           "type": "string",
