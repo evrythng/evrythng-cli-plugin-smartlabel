@@ -33,8 +33,14 @@ describe('evrythng-cli-plugin-smartlabel', () => {
         'https://example.com/privacy-policy/',  // customFields.smartLabel:company_privacy
         '3',  // customFields.smartLabel:dietary_fiber_dv
         '<1',  // customFields.smartLabel:dietary_fiber_g
-        'The BrandName Promise|BrandName Quality is your assurance of great quality products at the best value everyday - from delicious frozen entrees and freshly baked French bread to home essentials. Quality & satisfaction guaranteed or your money back.,Satisfaction Guarantee|OUR PROMISE - QUALITY & SATISFACTION 100% GUARANTEED OR YOUR MONEY BACK.',  // customFields.smartLabel:health
+        'No GMO Used|No GMO products were used in the making of this product.',  // customFields.smartLabel:gmo_disclosure
+        'The BrandName Promise|BrandName Quality is your assurance of great quality products at the best value everyday - from delicious frozen entrees and freshly baked French bread to home essentials. Quality & satisfaction guaranteed or your money back.,Satisfaction Guarantee|OUR PROMISE - QUALITY & SATISFACTION 100% GUARANTEED OR YOUR MONEY BACK.',  // customFields.smartLabel:health_and_safety
         'Enriched Flour, Wheat Flour, Niacin, Reduced Iron, Vitamin B1 [Thiamin Mononitrate], Vitamin B2 [Riboflavin], Folic Acid, Sugar, Vegetable Oil (Soybean and Palm Oil with TBHQ for freshness), Whole Grain Oats, Raisin Paste, Contains 2% or less of Baking Soda, Salt, Spice, Whey, Soy Lecithin',  // customFields.smartLabel:ingredients
+        'One shelf unit',  // customFields.smartLabel:product_descriptor
+        'Premium Quality',  // customFields.smartLabel:product_grade
+        'Enjoy with Milk|Enjoy these cookies with your favorite choice of milk.',  // customFields.product_instructions
+        'No meat juices used in this product',  // customFields.smartLabel:product_juice_declaration
+        'No meat',  // customFields.smartLabel:product_meat_legend
         '2',  // customFields.smartLabel:protein_g
         '10',  // customFields.smartLabel:sat_fat_dv
         '2',  // customFields.smartLabel:sat_fat_g
@@ -43,6 +49,7 @@ describe('evrythng-cli-plugin-smartlabel', () => {
         '9',  // customFields.smartLabel:sodium_dv
         '200',  // customFields.smartLabel:sodium_mg
         '10',  // customFields.smartLabel:sugars_g
+        'Sustainable Energy|Made using sustainable energy sources',  // customFields.smartLabel:sustainability
         '8',  // customFields.smartLabel:total_carbohydrates_dv
         '23',  // customFields.smartLabel:total_carbohydrates_g
         '8',  // customFields.smartLabel:total_fat_dv
@@ -69,8 +76,14 @@ describe('evrythng-cli-plugin-smartlabel', () => {
           'smartLabel:company_privacy': 'https://example.com/privacy-policy/',
           'smartLabel:dietary_fiber_dv': '3',
           'smartLabel:dietary_fiber_g': '<1',
-          'smartLabel:health': 'The BrandName Promise|BrandName Quality is your assurance of great quality products at the best value everyday - from delicious frozen entrees and freshly baked French bread to home essentials. Quality & satisfaction guaranteed or your money back.,Satisfaction Guarantee|OUR PROMISE - QUALITY & SATISFACTION 100% GUARANTEED OR YOUR MONEY BACK.',
+          'smartLabel:gmo_disclosure': 'No GMO Used|No GMO products were used in the making of this product.',
+          'smartLabel:health_and_safety': 'The BrandName Promise|BrandName Quality is your assurance of great quality products at the best value everyday - from delicious frozen entrees and freshly baked French bread to home essentials. Quality & satisfaction guaranteed or your money back.,Satisfaction Guarantee|OUR PROMISE - QUALITY & SATISFACTION 100% GUARANTEED OR YOUR MONEY BACK.',
           'smartLabel:ingredients': 'Enriched Flour, Wheat Flour, Niacin, Reduced Iron, Vitamin B1 [Thiamin Mononitrate], Vitamin B2 [Riboflavin], Folic Acid, Sugar, Vegetable Oil (Soybean and Palm Oil with TBHQ for freshness), Whole Grain Oats, Raisin Paste, Contains 2% or less of Baking Soda, Salt, Spice, Whey, Soy Lecithin',
+          'smartLabel:product_descriptor': 'One shelf unit',
+          'smartLabel:product_grade': 'Premium Quality',
+          'smartLabel:product_instructions': 'Enjoy with Milk|Enjoy these cookies with your favorite choice of milk.',
+          'smartLabel:product_juice_declaration': 'No meat juices used in this product',
+          'smartLabel:product_meat_legend': 'No meat',
           'smartLabel:protein_g': '2',
           'smartLabel:sat_fat_dv': '10',
           'smartLabel:sat_fat_g': '2',
@@ -79,6 +92,7 @@ describe('evrythng-cli-plugin-smartlabel', () => {
           'smartLabel:sodium_dv': '9',
           'smartLabel:sodium_mg': '200',
           'smartLabel:sugars_g': '10',
+          'smartLabel:sustainability': 'Sustainable Energy|Made using sustainable energy sources',
           'smartLabel:total_carbohydrates_dv': '8',
           'smartLabel:total_carbohydrates_g': '23',
           'smartLabel:total_fat_dv': '8',
