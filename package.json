@@ -1,6 +1,6 @@
 {
   "name": "evrythng-cli-plugin-smartlabel",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Plugin for the EVRYTHNG CLI that creates smartlabel.evrythng.io compatible products.",
   "main": "index.js",
   "author": "EVRYTHNG",
