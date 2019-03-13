@@ -5,6 +5,8 @@
 
 const { promptForData, validateProduct } = require('./util');
 
+const SMARTLABEL_SITE = 'https://smartlabel.evrythng.io';
+
 /**
  * Validate a product against the schema, and create it if it validates.
  *
@@ -15,9 +17,13 @@ const { promptForData, validateProduct } = require('./util');
  */
 const validateAndCreate = async (api, product, project) => {
   validateProduct(product);
-  return api.runCommand([
+  await api.runCommand([
     'products', 'create', JSON.stringify(product), '--project', project,
   ]);
+
+  console.log(`\nFinished! View your new SmartLabel-compatible product:`);
+  console.log(`\n  ${SMARTLABEL_SITE}/foodBeverages?product=$PRODUCT_ID&access_token=$APP_API_KEY`);
+  console.log('\nWhere $PRODUCT_ID is the product\'s ID, and $APP_API_KEY is an in-scope Application API Key.');
 };
 
 /**
