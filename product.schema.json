@@ -209,7 +209,7 @@
         },
         "smartLabel:total_fat_dv": {
           "type": "string",
-          "description": "Total fat % daily value in g"
+          "description": "Total fat % daily value"
         },
         "smartLabel:total_fat_g": {
           "type": "string",
