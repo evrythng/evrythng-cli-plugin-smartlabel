@@ -49,6 +49,8 @@ const promptForData = async () => {
   product.photos[0] = await module.exports.getValue('Product image URL');
 
   const { required } = SCHEMA.properties.customFields;
+
+  // Await value for each key in turn
   for (let i = 0; i < required.length; i += 1) {
     const key = required[i];
     const label = SCHEMA.properties.customFields.properties[key].description;
